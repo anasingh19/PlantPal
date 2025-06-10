@@ -15,3 +15,6 @@ struct PlantPalApp: App {
         }
     }
 }
+#Preview {
+    ContentView()
+}
