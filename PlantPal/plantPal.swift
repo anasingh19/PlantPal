@@ -61,7 +61,6 @@ struct plantPal: View {
         //nav stack
     }
     //body
-
 //end struck
 #Preview {
     plantPal()
