@@ -24,48 +24,83 @@ struct ContentView: View {
                 
                 
                 VStack {
-                    
-                    Text("Hello!🌱")
+                    Image("PlantPal (1)")
+                        .resizable(resizingMode: .stretch)
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 80.0, height: 80.0)
+                    Text("Welcome!")
                         .font(.largeTitle)
                         .fontWeight(.bold)
                         .foregroundColor(Color.white)
-                    NavigationLink(destination: plantPal()) {
-                        Text("Plant Pal")
+                        .padding()
+                    
+                    Spacer()
+                    
+                         Spacer()
+                         Spacer()
+                    Spacer()
+                    Spacer()
+                    Spacer()
+                Spacer()
+                    Spacer()
+                    Spacer()
+                    Spacer()
+                    Spacer()
+                         NavigationLink(destination: plantPal()) {
+                        Spacer()
+                             Text("Plant Pal")
                             .foregroundColor(Color.black)
                             .frame(maxWidth: .infinity)
                             .background(.white)
                             .clipShape(Capsule())
-                            
+                       Spacer()
                     }
-                    .padding()
                     
-                    NavigationLink(destination: personalInfo()) {
+                        .padding()
+                         
+                         NavigationLink(destination: personalInfo()) {
                         Text("Personal Info")
                             .foregroundColor(Color.black)
                             .frame(maxWidth: .infinity)
                             .background(.white)
                             .clipShape(Capsule())
-                           
+                        
+                        
+                         
+                             Spacer()
+                             
+                            
                             
                     }
+            
+                
+                    Spacer()
+                
+                  
+                        .padding()
                     
-                    
-                    .padding()
-                    
+                    Text("PlantPal is a wellness app that encourages better hydration by letting you care for a digital plant pet. After a quick survey about your water goals, you’ll meet your Pal and track your daily intake. Hitting your goal keeps your Pal healthy, while missing it makes them wilt. The app uses gentle responsibility to motivate you to drink more water.")
+                        .foregroundColor(Color.black)
+                        .frame(maxWidth: .infinity)
+                        .background(.white)
+                        .multilineTextAlignment(.center)
+                    .font(.custom("Verdana", size: 18))
+                    Spacer()
+                    Spacer()
+                        Spacer()
+                    Spacer()
+                        
                 }
                 .padding()
                 //vstack
                 
-                
-                //nav stack
-                .navigationBarBackButtonHidden(true)
             }
             //zstack
             
             
         }
     }
-        //body
+    //body
 }
 //struct end
 
