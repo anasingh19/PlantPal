@@ -35,8 +35,9 @@ struct ContentView: View {
                             .frame(maxWidth: .infinity)
                             .background(.white)
                             .clipShape(Capsule())
+                            
                     }
-                    
+                    .padding()
                     
                     NavigationLink(destination: personalInfo()) {
                         Text("Personal Info")
@@ -44,10 +45,12 @@ struct ContentView: View {
                             .frame(maxWidth: .infinity)
                             .background(.white)
                             .clipShape(Capsule())
+                           
+                            
                     }
                     
                     
-                    
+                    .padding()
                     
                 }
                 .padding()
