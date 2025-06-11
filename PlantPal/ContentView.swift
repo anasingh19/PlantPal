@@ -79,10 +79,10 @@ struct ContentView: View {
                   
                         .padding()
                     
-                    Text("PlantPal is a wellness app that encourages better hydration by letting you care for a digital plant pet. After a quick survey about your water goals, you’ll meet your Pal and track your daily intake. Hitting your goal keeps your Pal healthy, while missing it makes them wilt. The app uses gentle responsibility to motivate you to drink more water.")
+                    Text("PlantPal is a wellness app that encourages better hydration by letting you care for a digital plant pet. After a quick survey about your water goals, you’ll meet your Pal and track your daily intake. Hitting your goal keeps your Pal healthy, while missing it makes them wilt. Happy hydration!")
                         .foregroundColor(Color.black)
                         .frame(maxWidth: .infinity)
-                        .background(.white)
+                        .background(Color.white)
                         .multilineTextAlignment(.center)
                     .font(.custom("Verdana", size: 18))
                     Spacer()

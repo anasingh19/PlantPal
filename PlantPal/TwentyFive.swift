@@ -85,6 +85,7 @@ struct TwentyFive: View {
                 
             }
             //vstack
+        .navigationBarHidden(true)
         }
         //nav stack
     }

@@ -63,7 +63,7 @@ struct dying2: View {
                                              .padding(.horizontal)
                 
                 }
-                NavigationLink(destination: fullplant()) {
+                NavigationLink(destination: ContentView()) {
                     Text("Return home🏠.")
                         .font(.headline)
                         .buttonStyle(.borderedProminent)
