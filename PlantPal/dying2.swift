@@ -12,7 +12,7 @@ struct dying2: View {
             VStack {
       
 
-                ProgressView(value: 0.5
+                ProgressView(value: 0.50
                              
                              
                 )
@@ -21,7 +21,7 @@ struct dying2: View {
                     .font(.headline)
                     .foregroundColor(Color.blue)
                 Spacer()
-                Text("Oh no!")
+                Text("Oops!")
                     .font(.largeTitle)
                     .foregroundColor(Color.blue)
                 Text("Keep trying.")
@@ -45,7 +45,7 @@ struct dying2: View {
                                              .cornerRadius(10)
                                              .padding(.horizontal)
                 }
-                NavigationLink(destination: tryagain()) {
+                NavigationLink(destination: dying3()) {
                     Text("Daily goal not reached.")
                         .font(.title)
                         .buttonStyle(.borderedProminent)
@@ -53,21 +53,41 @@ struct dying2: View {
                         .font(.title2)
                                              
                                              .frame(maxWidth: .infinity)
-                                             .background(Color.blue.opacity(0.2))
-                                             .foregroundColor(.blue)
+                                             .background(Color.red.opacity(0.2))
+                                             .foregroundColor(.red)
                                              .overlay(
                                                  RoundedRectangle(cornerRadius: 10)
-                                                     .stroke(Color.blue, lineWidth: 2)
+                                                     .stroke(Color.red, lineWidth: 2)
                                              )
                                              .cornerRadius(10)
                                              .padding(.horizontal)
+                
+                }
+                NavigationLink(destination: fullplant()) {
+                    Text("Return home🏠.")
+                        .font(.headline)
+                        .buttonStyle(.borderedProminent)
+                        
+                        .font(.title2)
+                        
+                        .frame(maxWidth: .infinity)
+                        .background(Color.purple.opacity(0.2))
+                        .foregroundColor(.purple)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(Color.purple, lineWidth: 2)
+                        )
+                        .cornerRadius(10)
+                        .padding(.horizontal)
+                    
                 }
                     
                 }
-                    Image("digital plant 25% unhealth")
+                    Image("digital plant 50% unhealth - Copy")
                 
             }
             //vstack
+        .navigationBarHidden(true)
         }
         //nav stack
     }

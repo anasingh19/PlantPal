@@ -45,7 +45,7 @@ struct fullplant: View {
                                              .cornerRadius(10)
                                              .padding(.horizontal)
                 }
-                NavigationLink(destination: TwentyFive()) {
+                NavigationLink(destination: dying1()) {
                     Text("Daily goal not reached.")
                         .font(.title)
                         .buttonStyle(.borderedProminent)
@@ -62,12 +62,30 @@ struct fullplant: View {
                                              .cornerRadius(10)
                                              .padding(.horizontal)
                 }
+                NavigationLink(destination: fullplant()) {
+                    Text("Return home🏠.")
+                        .font(.headline)
+                        .buttonStyle(.borderedProminent)
+                        
+                        .font(.title2)
+                        
+                        .frame(maxWidth: .infinity)
+                        .background(Color.purple.opacity(0.2))
+                        .foregroundColor(.purple)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(Color.purple, lineWidth: 2)
+                        )
+                        .cornerRadius(10)
+                        .padding(.horizontal)
                     
+                }
                 }
                     Image("digital plant 0% unhealth")
                 
             }
             //vstack
+        .navigationBarHidden(true)
         }
         //nav stack
     }
