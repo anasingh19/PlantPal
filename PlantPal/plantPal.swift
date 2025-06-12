@@ -69,7 +69,7 @@ struct plantPal: View {
                     }
 
                    
-                    NavigationLink(destination: fullplant()) {
+                    NavigationLink(destination: ContentView()) {
                         Text("Return home 🏠")
                             .font(.headline)
                             .padding()
