@@ -38,7 +38,7 @@ struct dying3: View {
                         .foregroundColor(.blue)
                     
                  
-                    Image("digital plant 75% unhealth")
+                    Image("die75_-_Edited-removebg-preview")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 200)
