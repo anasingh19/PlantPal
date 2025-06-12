@@ -4,16 +4,7 @@
 //
 //  Created by Scholar on 6/9/25.
 //
-
-
-
-
 import SwiftUI
-
-
-
-
-
 struct ContentView: View {
     var body: some View {
         NavigationStack {
@@ -93,18 +84,21 @@ struct ContentView: View {
                 }
                 .padding()
                 //vstack
-                
+                navigationBarHidden(true)
             }
             //zstack
-            
-            
+        
+           
         }
         //
+    
     }
     //body
 }
 //struct end
-
 #Preview {
     ContentView()
 }
+
+
+
