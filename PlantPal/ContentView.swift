@@ -4,16 +4,7 @@
 //
 //  Created by Scholar on 6/9/25.
 //
-
-
-
-
 import SwiftUI
-
-
-
-
-
 struct ContentView: View {
     var body: some View {
         NavigationStack {
@@ -79,7 +70,7 @@ struct ContentView: View {
                   
                         .padding()
                     
-                    Text("PlantPal is a wellness app that encourages better hydration by letting you care for a digital plant pet. After a quick survey about your water goals, you’ll meet your Pal and track your daily intake. Hitting your goal keeps your Pal healthy, while missing it makes them wilt. The app uses gentle responsibility to motivate you to drink more water.")
+                    Text("PlantPal is a wellness app that encourages better hydration by letting you care for a digital plant pet. After a quick survey about your water goals, you’ll meet your Pal and track your daily intake. Hitting your goal keeps your Pal healthy, while missing it makes them wilt. Happy Hydration")
                         .foregroundColor(Color.black)
                         .frame(maxWidth: .infinity)
                         .background(.white)
@@ -103,7 +94,6 @@ struct ContentView: View {
     //body
 }
 //struct end
-
 #Preview {
     ContentView()
 }
