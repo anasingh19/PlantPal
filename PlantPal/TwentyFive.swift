@@ -75,7 +75,7 @@ struct TwentyFive: View {
                                 .cornerRadius(12)
                         }
 
-                        NavigationLink(destination: fullplant()) {
+                        NavigationLink(destination: ContentView()) {
                             Text("Return home 🏠")
                                 .font(.headline)
                                 .padding()
