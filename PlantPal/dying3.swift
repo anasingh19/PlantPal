@@ -1,5 +1,5 @@
 //
-//  plantPal.swift
+//  dying3.swift
 //  PlantPal
 //
 //  Created by Scholar on 6/10/25.
@@ -7,45 +7,45 @@
 
 import SwiftUI
 
-struct TwentyFive: View {
+struct dying3: View {
     var body: some View {
         NavigationStack {
             ZStack {
                
-                LinearGradient(gradient: Gradient(colors: [Color.blue.opacity(0.1), Color.white]),
+                LinearGradient(gradient: Gradient(colors: [Color.cyan.opacity(0.2), Color.white]),
                                startPoint: .topLeading,
                                endPoint: .bottomTrailing)
                     .ignoresSafeArea()
                 
                 VStack(spacing: 20) {
                     
-                  
-                    ProgressView(value: 0.5)
+                   
+                    ProgressView(value: 0.25)
                         .scaleEffect(x: 1.2, y: 1.2)
-                        .tint(.green)
-
-                    Text("50% of Goal Completed")
+                        .tint(.blue)
+                    
+                    Text("25% of Goal Completed!")
                         .font(.headline)
                         .foregroundColor(.blue)
                     
-                    Text("Great job!")
+                    Text("So thirsty!")
                         .font(.largeTitle)
                         .fontWeight(.bold)
                         .foregroundColor(.blue)
                     
-                    Text("Keep up the good work!")
+                    Text("Keep trying.")
                         .font(.title2)
                         .foregroundColor(.blue)
                     
-                   
-                    Image("little sprout")
+                 
+                    Image("digital plant 75% unhealth")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 200)
                         .shadow(radius: 1)
                         .padding(.vertical, 10)
-
-                   
+                    
+                 
                     VStack(spacing: 16) {
                         NavigationLink(destination: fullplant()) {
                             Text("Daily goal completed!💧")
@@ -61,7 +61,7 @@ struct TwentyFive: View {
                                 .cornerRadius(12)
                         }
 
-                        NavigationLink(destination: plantPal()) {
+                        NavigationLink(destination: dying4()) {
                             Text("Daily goal not reached.")
                                 .font(.headline)
                                 .padding()
@@ -75,7 +75,7 @@ struct TwentyFive: View {
                                 .cornerRadius(12)
                         }
 
-                        NavigationLink(destination: fullplant()) {
+                        NavigationLink(destination: ContentView()) {
                             Text("Return home 🏠")
                                 .font(.headline)
                                 .padding()
@@ -90,17 +90,17 @@ struct TwentyFive: View {
                         }
                     } // VStack (buttons)
                     .padding(.horizontal)
-
+                    
                     Spacer()
                 } // VStack (main content)
                 .padding()
-            } // ZStack (background + content)
+            } // ZStack (background + layout)
             .navigationBarHidden(true)
         } // NavigationStack
     } // body
-} // struct TwentyFive
+} // struct dying3
 
 #Preview {
-    TwentyFive()
+    dying3()
 }
 
