@@ -37,10 +37,10 @@ struct dying4: View {
                         .foregroundColor(.blue)
 
                 
-                    Image("digital plant 100% unhealth")
+                    Image("Die100")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 200)
+                        .frame(width: 300)
                         .shadow(radius: 1)
                         .padding(.vertical, 10)
 
